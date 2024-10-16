@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+  <title></title>
+
+    <style type="text/css">
+    #wrapper{
+  width: 1000px;
+  height: 600px;
+  border: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+            }
+    #header{
+  width:1000px;
+
+  text-shadow: 3px 3px 7px rgba(0,255,0,1);
+
+
+  height:70px;
+  float:right;
+            }
+    #link{
+  width:200px;
+  height:400px;
+
+  margin-top: 0px;
+  float:left;
+         }
+         #content{
+         width:700px;
+         height: 130px;
+         background-color: white;
+         margin-top: 0px;
+         float:left;
+         font-size: 20px;
+
+              }
+
+                   #footer{
+                       text-shadow: 1px 1px 1px green;
+                       background-color: pink;
+                   width:1000px;
+                   height: 100px;
+                   margin-bottom: 0px;
+                   float:right;
+                 }
+                 #scroll{
+                   overflow: scroll;
+                   width:800px;
+                   height: 430px;}
+
+  a:link {
+  text-decoration: none;}
+  li{
+  list-style-type:none;
+  text-align:center;
+  }
+  a{
+  float:left;
+  text-decoration:none;
+  }
+  .nav li{
+  background:pink;
+  width:130px;
+  text-align:center;
+  height:50px;
+  line-height:50px;
+  border:solid 1px black;
+  }
+  .nav>li{
+  float:left;
+  border-radius:50px 3px 50px 3px;
+  margin:20px 5px 10px 5px;
+
+  }
+
+  .mySlides {display:none;}
+
+  #bg{
+   text-shadow: 4px 4px 4px green;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: pink;
+    border: none;
+    text-shadow: 3px 3px 7px rgba(0,255,0,1);
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+  </style>
+  </head>
+  <body>
+    <div id="wrapper">
+    <div id="header"><h1 align="center">Nature : Travel & Tour </h1></div>
+    <div id="link">
+      <ul class="nav">
+
+
+      <li><a href="home.html" align="middle"  target="_blank"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</big></a></li>
+      <li><a href="Short.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short Trip</big></a></li>
+    <li><a href="Long.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Long Trip</big></a></li>
+      <li><a href="register.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register</big></a></li>
+    </ul>
+    </div>
+    <div id="scroll">
+
+    <div id="content">
+
+
+      <table align="center" >
+<tr>
+  <th colspan=2>
+    <h3 id="bg">Chaung Thar(2nights~3days)</h3></th>
+</tr>
+        <tr><td>
+          <img src="chaungtharlink.jpeg" width="500px" height="300px" align="left" id="ct" onmouseout="info()">
+   </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<button class="button" style="vertical-align:middle" name="cost" id="btnct"><span>Gross Cost </span>
+
+     <tr>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+     </tr>
+<tr>
+  <th colspan=2>
+    <h3  id="bg">Ngwe Saung(2nights~3days)</h3></th>
+</tr>
+     <tr><td>
+         <img src="NgweSaunglink.jpeg" width="500px" height="300px" align="left" id="ns" onmouseout="info()">
+     </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <button class="button" style="vertical-align:middle" name="cost" id="btnns"><span>Gross Cost </span>
+     </td></tr>
+     <tr>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+     </tr>
+
+     <tr>
+       <th colspan=2>
+         <h3  id="bg">Ngapali(2nights~3days)</h3></th>
+     </tr>
+             <tr><td>
+               <img src="ngapalilink.jpeg" width="500px" height="300px" align="left" id="ng" onmouseout="info()">
+        </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button class="button" style="vertical-align:middle" name="cost" id="btnng"><span>Gross Cost </span></td></tr>
+          <tr>
+            <td></td>
+          </tr>
+          <th colspan=2>
+            <h3  id="bg">Kyit Htee Yoe(1nights~2days)</h3></th>
+         </tr>
+                <tr><td>
+                  <img src="kyitehteeyoelink.jpeg" width="500px" height="300px" align="left" id="kt" onmouseout="info()">
+           </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <button class="button" style="vertical-align:middle" name="cost" id="btnkt"><span>Gross Cost </span></td></tr>
+<tr>
+            <td></td>
+          </tr>
+
+ <tr>
+       <th colspan=2>
+         <h3  id="bg">Shwe Satt Taw(2nights~3days)</h3></th>
+     </tr>
+             <tr><td>
+               <img src="shwesattlink.jpeg" width="500px" height="300px" align="left" id="st" onmouseout="info()">
+        </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button class="button" style="vertical-align:middle" name="cost" id="btnst"><span>Gross Cost </span></td></tr>
+          <tr>
+                <th colspan=2>
+                  <h3  id="bg">Pyin Oo Lwin(2nights~3days)</h3></th>
+              </tr>
+                      <tr><td>
+                        <img src="PyinOoLwinlink.jpeg" width="500px" height="300px" align="left" id="pol" onmouseout="info()">
+                 </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="button" style="vertical-align:middle" name="cost" id="btnpol"><span>Gross Cost </span></td></tr>
+
+
+
+   </table>
+
+ </div></div>
+    <div id="footer">
+      <p align="center">You can contact us: runner148@gmail.com</p>
+      <p align="center">Phone No: 09254935630 , 09420262192 , 09968211623 , 09968987251</p>
+    </div>
+    </div>
+  <script type="text/javascript">
+ ct.onclick=function(){
+      location="ChaungThar.html";
+     };
+btnct.onclick=function(){
+      alert("Single:200000 MMK \nDouble:380000 MMK \nTriple:550000 MMK");
+
+};
+ns.onclick=function(){
+     location="NgweSaung.html";
+    };
+btnns.onclick=function(){
+     alert("Single:200000 MMK \nDouble:380000 MMK \nTriple:550000 MMK");
+
+};
+ng.onclick=function(){
+     location="Ngapali.html";
+    };
+btnng.onclick=function(){
+     alert("Single:220000 MMK \nDouble:420000 MMK \nTriple:640000 MMK");
+
+};
+
+kt.onclick=function(){
+     location="Kyaiktiyo.html";
+    };
+btnkt.onclick=function(){
+     alert("Single:100000MMK \nDouble:200000MMK \nTriple:280000MMK");
+
+};
+
+st.onclick=function(){
+     location="ShweSatTaw.html";
+    };
+btnst.onclick=function(){
+      alert("Single:200000MMK \nDouble:400000MMK \nTriple:560000MMK");
+
+};
+pol.onclick=function(){
+     location="PyinOoLwin.html";
+   };
+btnpol.onclick=function(){
+     alert("Single:200000MMK \nDouble:400000MMK \nTriple:560000MMK");
+
+};
+
+function info(){
+
+  alert("For More Info:click photo ");
+};
+ </script>
+  </body>
+</html>

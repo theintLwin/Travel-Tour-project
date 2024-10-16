@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+  <title></title>
+
+    <style type="text/css">
+    #wrapper{
+width: 1000px;
+height: 600px;
+border: 2px solid blue;
+margin-left: auto;
+margin-right: auto;
+            }
+    #header{
+  width:1000px;
+
+text-shadow: 3px 3px 7px rgba(0,255,0,1);
+
+
+  height:70px;
+  float:right;
+            }
+    #link{
+width:200px;
+height:400px;
+
+margin-top: 0px;
+float:left;
+         }
+         #content{
+         width:700px;
+         height: 130px;
+         background-color: white;
+         margin-top: 0px;
+         float:left;
+         font-size: 20px;
+
+              }
+
+                   #footer{
+                       text-shadow: 1px 1px 1px green;
+                       background-color: pink;
+                   width:1000px;
+                   height: 100px;
+                   margin-bottom: 0px;
+                   float:right;
+                 }
+                 #scroll{
+                   overflow: scroll;
+                   width:800px;
+                   height: 430px;}
+
+a:link {
+text-decoration: none;}
+li{
+list-style-type:none;
+text-align:center;
+}
+a{
+float:left;
+text-decoration:none;
+}
+.nav li{
+background:pink;
+width:130px;
+text-align:center;
+height:50px;
+line-height:50px;
+border:solid 1px black;
+}
+.nav>li{
+float:left;
+border-radius:50px 3px 50px 3px;
+margin:20px 5px 10px 5px;
+
+}
+
+.mySlides {display:none;}
+
+ #bg{
+   text-shadow: 4px 4px 4px green;
+ }
+
+ .button {
+   display: inline-block;
+   border-radius: 4px;
+   background-color: pink;
+   border: none;
+   text-shadow: 3px 3px 7px rgba(0,255,0,1);
+   text-align: center;
+   font-size: 15px;
+   padding: 10px;
+   width: 200px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+ }
+
+ .button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+ }
+
+ .button span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+
+ .button:hover span {
+   padding-right: 25px;
+ }
+
+ .button:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+  </style>
+</head>
+  <body>
+    <div id="wrapper">
+    <div id="header"><h1 align="center">Nature : Travel & Tour </h1></div>
+    <div id="link">
+      <ul class="nav">
+
+
+      <li><a href="home.html" align="middle"  target="_blank"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</big></a></li>
+      <li><a href="Short.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short Trip</big></a></li>
+    <li><a href="Long.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Long Trip</big></a></li>
+      <li><a href="register.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register</big></a></li>
+    </ul>
+    </div>
+    <div id="scroll">
+
+    <div id="content">
+
+      <table>
+<tr>
+  <th colspan=2>
+    <h3 id="bg">Nay Pyi Taw-Mandalay-Pyin Oo Lwin(4nigths~5days)</h3></th>
+</tr>
+        <tr><td>
+          <img src="naypyintawlink.jpeg" width="150px" height="150px" align="left" id="np" onmouseout="info()">
+          <img src="mandalaylink.jpeg" width="150px" height="150px" align="left" id="mdy" onmouseout="info()">
+          <img src="PyinOoLwinlink.jpeg" width="150px" height="150px" align="left" id="poy" onmouseout="info()">
+   </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <button class="button" style="vertical-align:middle" name="cost" id="btn1"><span>Gross Cost </span></td></tr>
+     <tr><td></td>
+     </tr>  <tr>
+       <td></td>
+     </tr>
+<tr>
+  <th colspan=2>
+    <h3 id="bg">Bagan-Nyaung Oo-Popa(4nigths~5days)</h3></th>
+
+</tr>
+     <tr><td>
+         <img src="baganlink.jpeg" width="150px" height="150px" align="left" id="bg" onmouseout="info()">
+         <img src="NyaungOOlink1.jpeg" width="150px" height="150px" align="left" id="no" onmouseout="info()">
+         <img src="poppalink.jpeg" width="150px" height="150px" align="left" id="po" onmouseout="info()">
+     </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <button class="button" style="vertical-align:middle" name="cost" id="btn2"><span>Gross Cost </span></td></tr>
+     <tr>
+       <td></td>
+     </tr>
+     <tr>
+       <td></td>
+     </tr>
+
+    <tr>
+  <th colspan=2>
+    <h3 id="bg">Myeik-Dawei-Kaught Thaung(5nigths~6days)</h3></th>
+
+</tr>
+     <tr><td>
+         <img src="myeiklink (1).jpeg" width="150px" height="150px" align="left" id="m1" onmouseout="info()">
+         <img src="myeiklink (2).jpeg" width="150px" height="150px" align="left" id="m2" onmouseout="info()">
+         <img src="myeiklink (3).jpeg" width="150px" height="150px" align="left" id="m3" onmouseout="info()">
+     </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <button class="button" style="vertical-align:middle" name="cost" id="btn3"><span>Gross Cost </span></td></tr>
+     <tr>
+       <td></td>
+     </tr>
+          <tr>
+  <th colspan=2>
+    <h3 id="bg">Chin State(4nigths~5days)</h3></th>
+
+</tr>
+     <tr><td>
+         <img src="chinlink1.png" width="150px" height="150px" align="left" id="c1" onmouseout="info()">
+         <img src="chinlink2.jpg" width="150px" height="150px" align="left" id="c2" onmouseout="info()">
+         <img src="chinlink3.png" width="150px" height="150px" align="left" id="c3" onmouseout="info()">
+     </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="button" style="vertical-align:middle" name="cost" id="btn4"><span>Gross Cost </span></td></tr>
+     <tr>
+       <td></td>
+     </tr>
+
+ <tr>
+       <th colspan=2>
+         <h3 id="bg">Taunggyi-Inlay-Pinttaya-Kalaw(5nights~6days)</h3></th>
+     </tr>
+             <tr><td>
+               <img src="tg1.jpg" width="110px" height="150px" align="left" id="st1" onmouseout="info()">
+               <img src="tg2.jpg" width="110px" height="150px" align="left" id="st2" onmouseout="info()">
+               <img src="tg3.jpg" width="110px" height="150px" align="left" id="st3" onmouseout="info()">
+               <img src="tg4.jpg" width="110px" height="150px" align="left" id="st4" onmouseout="info()">
+
+        </td><td align="right" valign="bottom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <button class="button" style="vertical-align:middle" name="cost" id="btn5"><span>Gross Cost </span></td></tr>
+   </table>
+     </div>   </div>
+    <div id="footer">
+      <p align="center">You can contact us: runner148@gmail.com</p>
+      <p align="center">Phone No: 09254935630 , 09420262192 , 09968211623 , 09968987251</p>
+    </div>
+    </div>
+  <script type="text/javascript">
+
+np.onclick=function(){
+      location="mandalay.html";
+     };
+     poy.onclick=function(){
+           location="mandalay.html";
+          };
+          mdy.onclick=function(){
+                location="mandalay.html";
+               };
+btn1.onclick=function(){
+        alert("Single:700000 MMK \nDouble:1400000 MMK \nTriple:2000000 MMK");
+
+};
+bg.onclick=function(){
+      location="bagan.html";
+     };
+     no.onclick=function(){
+           location="bagan.html";
+          };
+          po.onclick=function(){
+                location="bagan.html";
+               };
+btn2.onclick=function(){
+       alert("Single:700000 MMK \nDouble:1400000 MMK \nTriple:2000000 MMK");
+
+};
+m1.onclick=function(){
+      location="myate.html";
+     };
+    m2.onclick=function(){
+           location="myate.html";
+          };
+      m3.onclick=function(){
+                location="myate.html";
+               };
+               btn3.onclick=function(){
+                    alert("Single:800000 MMK \nDouble:1500000 MMK \nTriple:2100000 MMK");
+
+               };
+
+c1.onclick=function(){
+      location="chin.html";
+     };
+c2.onclick=function(){
+           location="chin.html";
+          };
+c3.onclick=function(){
+                location="chin.html";
+               };
+btn4.onclick=function(){
+     alert("Single:600000 MMK \nDouble:1200000 MMK \nTriple:1700000 MMK");
+
+};
+
+st1.onclick=function(){
+     location="Taunggyi.html";
+    };
+st2.onclick=function(){
+     location="Taunggyi.html";
+    };
+st3.onclick=function(){
+     location="Taunggyi.html";
+    };
+st4.onclick=function(){
+     location="Taunggyi.html";
+    };
+btn5.onclick=function(){
+     alert("Single:800000MMK \nDouble:1500000MMK \nTriple:2200000MMK");
+
+};
+function info(){
+
+  alert("For More Info:click photo ");
+};
+
+ </script>
+  </body>
+</html>

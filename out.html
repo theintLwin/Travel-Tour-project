@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    #wrapper{
+width: 500px;
+height: 650px;
+border: 2px solid pink;
+margin-left: auto;
+margin-right: auto;
+background-color:pink;
+
+            }
+            #slide{
+              width: 500px;
+              height: 550px;
+              background-image:url("gifs.gif");
+            }
+            </style>
+  </head>
+  <body>
+  <div class="w3-content w3-section" style="max-width:700px" align="center" id="wrapper" color="yellow">
+<div id="slide"></div>
+
+
+<script type="text/javascript">
+      var name=sessionStorage.getItem("name");
+      var place=sessionStorage.getItem("place");
+      var date=sessionStorage.getItem("date");
+      var room=sessionStorage.getItem("room");
+      var bed=sessionStorage.getItem("bed");
+      document.write("<br>");
+      document.write(name+" have booked for "+place+" trip at "+date+".<br>");
+      document.write("Your choice for Room type ("+room+").<br>");
+      document.write("For extra Bed ("+bed+").<br>");
+  </script>
+    </div>
+  </body>
+</html>

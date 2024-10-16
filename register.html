@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <title></title>
+    <style type="text/css">
+    #wrapper{
+width: 1000px;
+height: 600px;
+border: 2px solid blue;
+margin-left: auto;
+margin-right: auto;
+            }
+            #header{
+          width:1000px;
+        text-shadow: 3px 3px 7px rgba(0,255,0,1);
+          height:70px;
+          float:right;
+                    }
+                    #link{
+                width:200px;
+                height:400px;
+                margin-top: 0px;
+                float:left;
+                         }
+                         #content{
+                         width:700px;
+                         height: 130px;
+                         background-color: white;
+                         margin-top: 0px;
+                         float:left;
+                         font-size: 20px;
+                              }
+                                   #footer{
+                                       text-shadow: 1px 1px 1px green;
+                                       background-color: pink;
+                                   width:1000px;
+                                   height: 100px;
+                                   margin-bottom: 0px;
+                                   float:right;
+                                 }
+                                 #scroll{
+                                   overflow: scroll;
+                                   width:800px;
+                                   height: 430px;}
+                                   a:link {
+                                   text-decoration: none;}
+                                   li{
+                                   list-style-type:none;
+                                   text-align:center;
+                                   }
+                                   a{
+                                   float:left;
+                                   text-decoration:none;
+                                   }
+                                   .nav li{
+                                   background:pink;
+                                   width:130px;
+                                   text-align:center;
+                                   height:50px;
+                                   line-height:50px;
+                                   border:solid 1px black;
+                                   }
+                                   .nav>li{
+                                   float:left;
+                                   border-radius:50px 3px 50px 3px;
+                                   margin:20px 5px 10px 5px;
+                                   }
+                                   .mySlides {display:none;}
+                  input[type=text], select {
+                    width: 40%;
+                    padding: 12px 10px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background-color: pink;
+                  }
+                  input[type=email], select {
+                    width: 40%;
+                    padding: 12px 10px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background-color: pink;
+                  }
+                  input[type=button] {
+                    width: 20%;
+                    background-color: pink;
+                    color: black;
+                    padding: 14px 20px;
+                    margin: 7px 0 7px 50px;
+                    border-radius: 4px;
+                  }
+
+                  input[type=tel], select {
+                    width: 40%;
+                    padding: 12px 10px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background-color: pink;
+                  }
+
+
+    </style>
+  </head>
+    <body>
+      <div id="wrapper">
+      <div id="header"><h1 align="center">Nature : Travel & Tour </h1></div>
+      <div id="link">
+        <ul class="nav">
+        <li><a href="home.html" align="middle"  target="_blank"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</big></a></li>
+        <li><a href="Short.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Short Trip</big></a></li>
+      <li><a href="Long.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Long Trip</big></a></li>
+        <li><a href="register.html" align="middle"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register</big></a></li>
+      </ul>
+      </div>
+      <div id="scroll">
+    <div id="content" align="center" >
+      <form action="out.html">
+        <label for="name">Enter Your Name:</label><br>
+        <input type="text" id="name" placeholder="Your Name"
+        required/><br>
+        <label for="email">Enter Your Email:</label><br>
+        <input type="email" name="email" placeholder="Your Email" required ><br>
+        <label for="nrc">Enter Your NRC:</label><br>
+       <input type="text" name="nrc" placeholder="Your NRC" required><br>
+        <label for="pno">Enter Your Phone Number:</label><br>
+        <input type="tel"  pattern = "[0-9]{11}" name="pno" placeholder="Your Phone Number" required><br><br>
+        <label for="place">Place You want to visit</label><br>
+        <select id="place" name="place">
+          <option value="ChaungThar" id="chaungthar"><big>Chaung Thar</big></option>
+          <option value="NgweSaung"><big>Ngwe Saung</big></option>
+          <option value="Ngapali"><big>Ngapali</big></option>
+          <option value="Kyaiktiyo"><big>Kyaikti Yo</big></option>
+          <option value="ShweSatTaw"><big>Shwe Sat Taw</big></option>
+          <option value="PyinOoLwin"><big>Pyin Oo Lwin</big></option>
+          <option value="NayPyiTaw Mandalay PyinOoLwin"><big>NayPyiTaw Mandalay PyinOoLwin</big></option>
+          <option value="Bagan NyaungOo Popa"><big>Bagan NyaungOo Popa</big></option>
+          <option value="Myeik Dawei KaughtThaung"><big>Myeik Dawei KaughtThaung</big></option>
+          <option value="Chin State"><big>Chin State</big></option>
+          <option value="Taunggyi Inlay Pintaya Kalaw"><big>Taunggyi Inlay Pintaya Kalaw</big></option>
+        </select><br><br>
+        <label for="date">Enter Date You want to start Trip:</label><br>
+        <input type="date" id="date" placeholder="Your Date"
+        required><br><br>
+        <label for="room">Type of Room</label><br>
+        <select id="room" name="room">
+          <br><br>
+            <option value="Singleroom" ><big>Single Room</big></option>
+            <option value="Doubleroom"><big>Double Room</big></option>
+            <option value="Tripleroom"><big>Triple Room</big></option></select><br><br>
+            <label for="exbed">Do you want to get an Extra Bed?(Price~10000MMK)</label>
+            <select id="exbed" name="exbed">
+            <option value="Yes" ><big>Yes</big></option>
+            <option value="No"><big>No</big></option></select><br>
+          <input type="button" class="btn" name="button" value="Calculate Cost" id="btn"></button><br>
+          <div style="position:absolute; visibility:hidden; background-color:pink" id="menu">
+          <label for="amt">Your Total amount is:</label><br>
+          <input type="text" name="amt" placeholder="Your Total amount" required><br>
+          <label for="acc">Our Bank Account is:</label><br>
+          <input type="text" name="nrc" readonly="readonly" value="0097432176429054" ><br>
+        </div>
+</div>
+    </div>
+    <div id="footer">
+      <p align="center">You can contact us: runner148@gmail.com</p>
+      <p align="center">Phone No: 09254935630 , 09420262192 , 09968211623 , 09968987251</p>
+    </div>
+    </div>
+    <script type="text/javascript">
+      var reg=document.getElementById("btn");
+      var menu=document.getElementById("menu");
+      reg.onclick=function(){
+       var b=document.createElement("input");
+       b.readOnly="readOnly";
+       var boy=document.getElementById("content");
+       b.type="text";
+       var room=document.getElementById("room");
+       var sct=document.getElementById("place");
+       var bed=document.getElementById("exbed");
+       if(sct.value=="ChaungThar" && room.value=="Singleroom" && bed.value=="Yes" )
+       b.value="210000";
+       else if(sct.value=="ChaungThar" && room.value=="Doubleroom" && bed.value=="Yes")
+       b.value="390000";
+       else if(sct.value=="ChaungThar" && room.value=="Tripleroom" && bed.value=="Yes")
+       b.value="560000";
+       else if(sct.value=="ChaungThar" && room.value=="Singleroom" && bed.value=="No" )
+       b.value="200000";
+       else if(sct.value=="ChaungThar" && room.value=="Doubleroom" && bed.value=="No")
+       b.value="380000";
+       else if(sct.value=="ChaungThar" && room.value=="Tripleroom" && bed.value=="No")
+       b.value="550000";
+       if(sct.value=="NgweSaung" && room.value=="Singleroom" && bed.value=="Yes" )
+       b.value="210000";
+       else if(sct.value=="NgweSaung" && room.value=="Doubleroom" && bed.value=="Yes")
+       b.value="390000";
+       else if(sct.value=="NgweSaung" && room.value=="Tripleroom" && bed.value=="Yes")
+       b.value="560000";
+       else if(sct.value=="NgweSaung" && room.value=="Singleroom" && bed.value=="No" )
+       b.value="200000";
+       else if(sct.value=="NgweSaung" && room.value=="Doubleroom" && bed.value=="No")
+       b.value="380000";
+       else if(sct.value=="NgweSaung" && room.value=="Tripleroom" && bed.value=="No")
+       b.value="550000";
+       if(sct.value=="Ngapali" && room.value=="Singleroom" && bed.value=="Yes" )
+       b.value="230000";
+       else if(sct.value=="Ngapali" && room.value=="Doubleroom" && bed.value=="Yes")
+       b.value="430000";
+       else if(sct.value=="Ngapali" && room.value=="Tripleroom" && bed.value=="Yes")
+       b.value="660000";
+       else if(sct.value=="Ngapali" && room.value=="Singleroom" && bed.value=="No" )
+       b.value="220000";
+       else if(sct.value=="Ngapali" && room.value=="Doubleroom" && bed.value=="No")
+       b.value="420000";
+       else if(sct.value=="Ngapali" && room.value=="Tripleroom" && bed.value=="No")
+       b.value="650000";
+       if(sct.value=="Kyaiktiyo" && room.value=="Singleroom" && bed.value=="Yes" )
+       b.value="110000";
+       else if(sct.value=="Kyaiktiyo" && room.value=="Doubleroom" && bed.value=="Yes")
+       b.value="210000";
+      else if(sct.value=="Kyaiktiyo" && room.value=="Tripleroom" && bed.value=="Yes")
+        b.value="290000";
+        else if(sct.value=="Kyaiktiyo" && room.value=="Singleroom" && bed.value=="No" )
+        b.value="100000";
+        else if(sct.value=="Kyaiktiyo" && room.value=="Doubleroom" && bed.value=="No")
+        b.value="200000";
+        else if(sct.value=="Kyaiktiyo" && room.value=="Tripleroom" && bed.value=="No")
+        b.value="290000";
+              if(sct.value=="ShweSatTaw" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="210000";
+              else if(sct.value=="ShweSatTaw" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="410000";
+              else if(sct.value=="ShweSatTaw" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="570000";
+              else if(sct.value=="ShweSatTaw" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="200000";
+              else if(sct.value=="ShweSatTaw" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="400000";
+              else if(sct.value=="ShweSatTaw" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="560000";
+              if(sct.value=="PyinOoLwin" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="210000";
+              else if(sct.value=="PyinOoLwin" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="410000";
+              else if(sct.value=="PyinOoLwin" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="570000";
+              else if(sct.value=="PyinOoLwin" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="200000";
+              else if(sct.value=="PyinOoLwin" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="400000";
+              else if(sct.value=="PyinOoLwin" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="560000";
+              if(sct.value=="NayPyiTaw Mandalay PyinOoLwin" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="710000";
+              else if(sct.value=="NayPyiTaw Mandalay PyinOoLwin" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="1410000";
+              else if(sct.value=="NayPyiTaw Mandalay PyinOoLwin" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="2010000";
+              else if(sct.value=="NayPyiTaw Mandalay PyinOoLwin" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="700000";
+              else if(sct.value=="NayPyiTaw Mandalay PyinOoLwin" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="1400000";
+              else if(sct.value=="NayPyiTaw Mandalay PyinOoLwin" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="2000000";
+              if(sct.value=="Bagan NyaungOo Popa" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="710000";
+              else if(sct.value=="Bagan NyaungOo Popa" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="1410000";
+              else if(sct.value=="Bagan NyaungOo Popa" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="2010000";
+              else if(sct.value=="Bagan NyaungOo Popa" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="700000";
+              else if(sct.value=="Bagan NyaungOo Popa" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="1400000";
+              else if(sct.value=="Bagan NyaungOo Popa" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="2000000";
+              if(sct.value=="Myeik Dawei KaughtThaung" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="810000";
+              else if(sct.value=="Myeik Dawei KaughtThaung" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="1510000";
+              else if(sct.value=="Myeik Dawei KaughtThaung" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="2110000";
+              else if(sct.value=="Myeik Dawei KaughtThaung" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="800000";
+              else if(sct.value=="Myeik Dawei KaughtThaung" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="1500000";
+              else if(sct.value=="Myeik Dawei KaughtThaung" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="2100000";
+              if(sct.value=="Chin State" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="610000";
+              else if(sct.value=="Chin State" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="1210000";
+              else if(sct.value=="Chin State" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="1710000";
+              else if(sct.value=="Chin State" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="600000";
+              else if(sct.value=="Chin State" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="1200000";
+              else if(sct.value=="Chin State" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="1700000";
+
+
+              if(sct.value=="Taunggyi Inlay Pintaya Kalaw" && room.value=="Singleroom" && bed.value=="Yes" )
+              b.value="810000";
+              else if(sct.value=="Taunggyi Inlay Pintaya Kalaw" && room.value=="Doubleroom" && bed.value=="Yes")
+              b.value="1510000";
+              else if(sct.value=="Taunggyi Inlay Pintaya Kalaw" && room.value=="Tripleroom" && bed.value=="Yes")
+              b.value="2210000";
+              else if(sct.value=="Taunggyi Inlay Pintaya Kalaw" && room.value=="Singleroom" && bed.value=="No" )
+              b.value="800000";
+              else if(sct.value=="Taunggyi Inlay Pintaya Kalaw" && room.value=="Doubleroom" && bed.value=="No")
+              b.value="1500000";
+              else if(sct.value=="Taunggyi Inlay Pintaya Kalaw" && room.value=="Tripleroom" && bed.value=="No")
+              b.value="2200000";
+
+
+
+              var sub=document.createElement("input");
+              sub.type="button";
+              sub.value="Register";
+              var br=document.createElement("br");
+             sub.onclick  =  function(){
+                var name=document.getElementById("name");
+                var date=document.getElementById("date");
+
+                sessionStorage.setItem("name",name.value);
+                sessionStorage.setItem("place",sct.value);
+                sessionStorage.setItem("date",date.value);
+                sessionStorage.setItem("room",room.value);
+                sessionStorage.setItem("bed",bed.value);
+
+ 	location="out.html";
+
+              };
+
+
+       var txt=document.createTextNode("Your Total Cost is:");
+       boy.appendChild(txt);
+       boy.appendChild(b);
+       boy.appendChild(br);
+       boy.appendChild(sub);
+    };
+    </script>
+  </body>
+</html>
